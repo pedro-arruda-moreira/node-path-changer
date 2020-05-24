@@ -21,7 +21,8 @@
     "url": "git+https://github.com/pedro-arruda-moreira/node-path-changer.git"
   },
   "keywords": [
-    "path"
+    "path",
+    "NODE_PATH"
   ],
   "author": "Pedro Moreira",
   "license": "MIT",
