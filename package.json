@@ -1,0 +1,41 @@
+{
+  "name": "node-path-changer",
+  "version": "1.0.0",
+  "description": "Changes nodejs's NODE_PATH env var programmatically",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "prepublish": "npm install --global del-cli && del-cli *.js *.d.ts *.map test/*.js test/*.d.ts test/*.map &&  tsc && mocha",
+    "test": "npm install --global del-cli && del-cli *.js *.d.ts *.map test/*.js test/*.d.ts test/*.map &&  tsc && mocha"
+  },
+  "files": [
+    "index.d.ts",
+    "index.js",
+    "index.js.map",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedro-arruda-moreira/node-path-changer.git"
+  },
+  "keywords": [
+    "path"
+  ],
+  "author": "Pedro Moreira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pedro-arruda-moreira/node-path-changer/issues"
+  },
+  "homepage": "https://github.com/pedro-arruda-moreira/node-path-changer#readme",
+  "dependencies": {
+    "@types/node": "^14.0.5",
+    "mocha": "^7.2.0",
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^3.5.0",
+    "@types/mocha": "^7.0.2"
+  }
+}

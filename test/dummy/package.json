@@ -1,0 +1,11 @@
+{
+  "name": "dummy",
+  "version": "0.0.1",
+  "description": "just a dummy module for unit tests...",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "author": "Pedro Moreira",
+  "license": "MIT"
+}
