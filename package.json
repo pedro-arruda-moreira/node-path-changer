@@ -1,14 +1,14 @@
 {
   "name": "node-path-changer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Changes nodejs's NODE_PATH env var programmatically",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
     "clean": "npm install --global del-cli && del-cli *.js *.d.ts *.map test/*.js test/*.d.ts test/*.map",
-    "prepack": "npm run clean && npm install -P -D && mocha",
-    "install": "tsc",
-    "test": "npm run clean && npm install -P -D && mocha"
+    "compile": "npm run clean && npm install -P -D && tsc",
+    "prepack": "npm run compile && mocha",
+    "test": "npm run compile && mocha"
   },
   "files": [
     "index.d.ts",
