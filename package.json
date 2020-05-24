@@ -5,8 +5,10 @@
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
-    "prepublish": "npm install --global del-cli && del-cli *.js *.d.ts *.map test/*.js test/*.d.ts test/*.map &&  tsc && mocha",
-    "test": "npm install --global del-cli && del-cli *.js *.d.ts *.map test/*.js test/*.d.ts test/*.map &&  tsc && mocha"
+    "clean": "npm install --global del-cli && del-cli *.js *.d.ts *.map test/*.js test/*.d.ts test/*.map",
+    "prepack": "npm run clean && npm install -P -D && mocha",
+    "install": "tsc",
+    "test": "npm run clean && npm install -P -D && mocha"
   },
   "files": [
     "index.d.ts",
@@ -30,8 +32,7 @@
     "url": "https://github.com/pedro-arruda-moreira/node-path-changer/issues"
   },
   "homepage": "https://github.com/pedro-arruda-moreira/node-path-changer#readme",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/node": "^14.0.5",
     "@types/chai": "^3.5.0",
