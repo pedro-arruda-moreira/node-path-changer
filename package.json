@@ -1,6 +1,6 @@
 {
   "name": "node-path-changer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Changes nodejs's NODE_PATH env var programmatically",
   "main": "index.js",
   "types": "index.d.ts",
