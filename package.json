@@ -1,6 +1,6 @@
 {
   "name": "node-path-changer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Changes nodejs's NODE_PATH env var programmatically",
   "main": "index.js",
   "types": "index.d.ts",
@@ -31,12 +31,12 @@
   },
   "homepage": "https://github.com/pedro-arruda-moreira/node-path-changer#readme",
   "dependencies": {
-    "@types/node": "^14.0.5",
-    "mocha": "^7.2.0",
-    "chai": "^4.2.0"
   },
   "devDependencies": {
+    "@types/node": "^14.0.5",
     "@types/chai": "^3.5.0",
-    "@types/mocha": "^7.0.2"
+    "@types/mocha": "^7.0.2",
+    "mocha": "^7.2.0",
+    "chai": "^4.2.0"
   }
 }
